@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking site</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+     integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" 
+rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+       <div class="logotext">
+          <div class="bird">
+             <img src="bird icon.svg">
+          </div>
+          <div class="birdevents">
+              <h1 class="birdlogo-text">Bird Events</h1>
+              <div class="subtext">
+                 seach,filter,browse made-up events!
+              </div>
+          </div>
+       </div>
+       <div class="spacer"></div>
+       <nav class="navigation">
+          <a href="#" class="menu">Browse Events</a>
+          <a href="#" class="menu">Post an Events</a>
+          <a href="#" class="menu">Join the Community</a>
+          <a href="#" class="menu">Login</a>
+       </nav>
+    </div>
+    <div class="container">
+        
+            <div class="section-left">
+                <div class="form">
+                    <form id="email">
+                        <div class="search-bar">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <input type="text" placeholder="           search">
+                        </div>
+                    </form>
+                </div>
+                <div class="dropdown">
+                    <div class="location">
+                        <h4>Locations<i class="fa-solid fa-caret-down" id="icon"></i></h4>
+                        <div class="list">
+                            <div class="places">
+                                 <i class="fa-solid fa-magnifying-glass"></i>
+                                 <div class="country">India</div>
+                                 <div class="margin" style="padding-left: 70px;">1</div>
+                            </div>
+                            <div class="places">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                                <div class="country">San Ramone</div>
+                                <div class="margin">3</div>
+                           </div>
+                           <div class="places">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                                <div class="country">Dublin</div>
+                                <div class="margin" style="padding-left: 55px;">7</div>
+                           </div>
+                           <div class="places">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                                <div class="country">San Jose</div>
+                                <div class="margin" style="padding-left: 45px;">2</div>
+                           </div>
+                           <div class="places">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                                <div class="country">Fremont</div>
+                                <div class="margin" style="padding-left: 45px;">7</div>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clear-filter">
+                       <button type="button">Clear Filter </button>
+                </div>
+                <div class="content">
+                    <h4>Stay in the loop</h4>
+                    <p>Get notified about new events,discounts and much more!</p>
+                    <div class="another-form">
+                         <form id="w-email">
+                             <input type="email" placeholder="hari@gmai.com">
+                             <button type="submit">Create alerts</button>
+                         </form>
+                    </div>
+                </div>
+            </div>
+        <div class="section-right">
+            <div class="events">
+                <div>
+                     <h4>Showing 20 Events</h4>
+                </div>
+                <div>
+                    <i class="fa-solid fa-grip-vertical" id="gridSectionRight"></i>
+                    <i class="fa-solid fa-list" id="listSectionRight"></i>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="card1">
+                    
+                    <img src="card1.jpeg">
+                
+                    <div class="overlay">
+                       <img src="music.svg">
+                    </div>
+                    <div class="text-container">
+                        <div class="text">
+                           <h4>Aut</h4>
+                           <p>Magni et laudantium cum.uttempora recusandae repallat reiciend</p>
+                        </div>
+                        <div class="text-block">
+                            <div class="music">Music</div>
+                            <div class="year">Min 1 year</div>
+                        </div>
+                        <div class="text-content">
+                            <div class="currency">&#36;29886.3</div>
+                            <div class="date">3/22/2022</div>
+                            <div class="name">Fremont</div>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <button type="button" class="btn">Details</a></button>
+                        <button type="submit" class="submit">Buy Now</button>
+                    </div>
+                </div>
+                <div class="card1">
+                    
+                    <img src="card2.jpeg">
+                
+                    <div class="overlay">
+                       <img src="music.svg">
+                    </div>
+                    <div class="text-container">
+                        <h4>Explicabo Consectetur Fugit Corrupti</h4>
+                        <p>Ut occaecati amet. Qui perspiciatis assumenda non est rem nesciunt atque s</p>
+                        <div class="text-block">
+                            <div class="music">Music</div>
+                            <div class="year">Min 1 year</div>
+                        </div>
+                        <div class="text-content">
+                            <div class="currency">&#36;55257.1</div>
+                            <div class="date">5/2/2022</div>
+                            <div class="name">San Ramone</div>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <button type="button" class="btn">Details</button>
+                        <button type="submit" class="submit">Buy Now</button>
+                    </div>
+                </div>
+                <div class="card1">
+                    
+                    <img src="card3.jpeg">
+                
+                    <div class="overlay">
+                       <img src="music.svg">
+                    </div>
+                    <div class="text-container">
+                        <h4>Enim</h4>
+                        <p>Sed illo libero eius ut voluptate. Inventore qui sint. Et et sed nemo et</p>
+                        <div class="text-block">
+                            <div class="music">Music</div>
+                            <div class="year">Min 1 year</div>
+                        </div>
+                        <div class="text-content">
+                            <div class="currency">&#36;67453.1</div>
+                            <div class="date">10/29/2020</div>
+                            <div class="name">India</div>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <button type="button" class="btn">Details</button>
+                        <button type="submit" class="submit">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="card1">
+                    
+                    <img src="card4.jpeg">
+                
+                    <div class="overlay">
+                       <img src="music.svg">
+                    </div>
+                    <div class="text-container">
+                        <h4>Ut Aliquid Nobis Et</h4>
+                        <p>Eaque hic dolore esse vel ipsa omnis vel minima. Ab sunt ipsum. Aut dolor comm</p>
+                        <div class="text-block">
+                            <div class="music">Music</div>
+                            <div class="year">Min 1 year</div>
+                        </div>
+                        <div class="text-content">
+                            <div class="currency">&#36;99012.5</div>
+                            <div class="date">2/15/2021</div>
+                            <div class="name">San Jose</div>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <button type="button" class="btn">Details</button>
+                        <button type="submit" class="submit">Buy Now</button>
+                    </div>
+                </div>
+                <div class="card1">
+                    
+                    <img src="card5.jpeg">
+                
+                    <div class="overlay">
+                       <img src="music.svg">
+                    </div>
+                    <div class="text-container">
+                        <h4>Qui Maiores Sit Sed</h4>
+                        <p>Perferendis alias</p>
+                        <div class="text-block">
+                            <div class="music">Music</div>
+                            <div class="year">Min 1 year</div>
+                        </div>
+                        <div class="text-content">
+                            <div class="currency">&#36;96204.8</div>
+                            <div class="date">3/5/2022</div>
+                            <div class="name">Dublin</div>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <button type="button" class="btn">Details</button>
+                        <button type="submit" class="submit">Buy Now</button>
+                    </div>
+                </div>
+                <div class="card1">
+                    
+                    <img src="card6.jpeg">
+                
+                    <div class="overlay">
+                       <img src="music.svg">
+                    </div>
+                    <div class="text-container">
+                        <h4>Voluptatem</h4>
+                        <p>Ut in non sed soluta. Perferend</p>
+                        <div class="text-block">
+                            <div class="music">Music</div>
+                            <div class="year">Min 1 year</div>
+                        </div>
+                        <div class="text-content">
+                            <div class="currency">&#36;23795.2</div>
+                            <div class="date">2/18/2022</div>
+                            <div class="name">Dublin</div>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <button type="button" class="btn">Details</button>
+                        <button type="submit" class="submit">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="card1">
+                    
+                    <img src="card7.jpeg">
+                
+                    <div class="overlay">
+                       <img src="music.svg">
+                    </div>
+                    <div class="text-container">
+                        <h4>Et Nostrum</h4>
+                        <p>Voluptatem error et eligendi fugiat. Provident eveniet re</p>
+                        <div class="text-block">
+                            <div class="music">Music</div>
+                            <div class="year">Min 1 year</div>
+                        </div>
+                        <div class="text-content">
+                            <div class="currency">&#36;12037.7</div>
+                            <div class="date">4/29/2022</div>
+                            <div class="name">San Jose</div>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <button type="button" class="btn">Details</button>
+                        <button type="submit" class="submit">Buy Now</button>
+                    </div>
+                </div>
+                <div class="card1">
+                    
+                    <img src="card3.jpeg">
+                
+                    <div class="overlay">
+                       <img src="music.svg">
+                    </div>
+                    <div class="text-container">
+                        <h4>Et</h4>
+                        <p>Officiis quibusdam quis deserunt. Quasi et a</p>
+                        <div class="text-block">
+                            <div class="music">Music</div>
+                            <div class="year">Min 1 year</div>
+                        </div>
+                        <div class="text-content">
+                            <div class="currency">&#36;82537.7</div>
+                            <div class="date">11/10/2020</div>
+                            <div class="name">Fremont</div>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <button type="button" class="btn">Details</button>
+                        <button type="submit" class="submit">Buy Now</button>
+                    </div>
+                </div>
+                <div class="card1">
+                    
+                    <img src="card7.jpeg">
+                
+                    <div class="overlay">
+                       <img src="music.svg">
+                    </div>
+                    <div class="text-container">
+                        <h4>Cum Excepturi Sed</h4>
+                        <p>Voluptates consequatur quia quos et molestiae enim minus temporibus et. Vel sunt</p>
+                        <div class="text-block">
+                            <div class="music">Music</div>
+                            <div class="year">Min 1 year</div>
+                        </div>
+                        <div class="text-content">
+                            <div class="currency">&#36;88574.0</div>
+                            <div class="date">10/26/2020</div>
+                            <div class="name">Dublin</div>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <button type="button" class="btn">Details</button>
+                        <button type="submit" class="submit">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="card1">
+                    
+                    <img src="card8.jpeg">
+                
+                    <div class="overlay">
+                       <img src="music.svg">
+                    </div>
+                    <div class="text-container">
+                        <h4>Cum</h4>
+                        <p>Error qui ut temporibus aspernatur. Qui corrupti est temporibus illum est amet</p>
+                        <div class="text-block">
+                            <div class="music">Music</div>
+                            <div class="year">Min 1 year</div>
+                        </div>
+                        <div class="text-content">
+                            <div class="currency">&#36;88755.0</div>
+                            <div class="date">6/1/2021</div>
+                            <div class="name">San Ramone</div>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <button type="button" class="btn">Details</button>
+                        <button type="submit" class="submit">Buy Now</button>
+                    </div>
+                </div>
+                <div class="card1">
+                    
+                    <img src="card9.jpeg">
+                
+                    <div class="overlay">
+                       <img src="music.svg">
+                    </div>
+                    <div class="text-container">
+                        <h4>Dolore</h4>
+                        <p>Doloribus optio magni sunt voluptatum provident</p>
+                        <div class="text-block">
+                            <div class="music">Music</div>
+                            <div class="year">Min 1 year</div>
+                        </div>
+                        <div class="text-content">
+                            <div class="currency">&#36;31280.8</div>
+                            <div class="date">7/18/2022</div>
+                            <div class="name">Fremont</div>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <button type="button" class="btn">Details</button>
+                        <button type="submit" class="submit">Buy Now</button>
+                    </div>
+                </div>
+                <div class="card1">
+                    
+                    <img src="card5.jpeg">
+                
+                    <div class="overlay">
+                       <img src="music.svg">
+                    </div>
+                    <div class="text-container">
+                        <h4>Autem</h4>
+                        <p>Hic aut voluptatum voluptates odio blanditiis voluptas iu</p>
+                        <div class="text-block">
+                            <div class="music">Music</div>
+                            <div class="year">Min 1 year</div>
+                        </div>
+                        <div class="text-content">
+                            <div class="currency">&#36;48112.9</div>
+                            <div class="date">8/24/202</div>
+                            <div class="name">Fremont</div>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <button type="button" class="btn">Details</button>
+                        <button type="submit" class="submit">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="card1">
+                    
+                    <img src="card10.jpeg">
+                
+                    <div class="overlay">
+                       <img src="music.svg">
+                    </div>
+                    <div class="text-container">
+                        <h4>Iste</h4>
+                        <p>Praesentium eaque libero ratione. Ea culpa et itaque aliquid quia et. Consequatu</p>
+                        <div class="text-block">
+                            <div class="music">Music</div>
+                            <div class="year">Min 1 year</div>
+                        </div>
+                        <div class="text-content">
+                            <div class="currency">&#36;98769.6</div>
+                            <div class="date">10/17/202</div>
+                            <div class="name">Dublin</div>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <button type="button" class="btn">Details</button>
+                        <button type="submit" class="submit">Buy Now</button>
+                    </div>
+                </div>
+                <div class="card1">
+                    
+                    <img src="card11.jpeg">
+                
+                    <div class="overlay">
+                       <img src="music.svg">
+                    </div>
+                    <div class="text-container">
+                        <h4>Pariatur Nemo Distinctio Optio</h4>
+                        <p>Quo iste impedit est nihil qui vero</p>
+                        <div class="text-block">
+                            <div class="music">Music</div>
+                            <div class="year">Min 1 year</div>
+                        </div>
+                        <div class="text-content">
+                            <div class="currency">&#36;69942.1</div>
+                            <div class="date">1/9/2022</div>
+                            <div class="name">Fremont</div>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <button type="button" class="btn">Details</button>
+                        <button type="submit" class="submit">Buy Now</button>
+                    </div>
+                </div>
+                <div class="card1">
+                    
+                    <img src="card11.jpeg">
+                
+                    <div class="overlay">
+                       <img src="music.svg">
+                    </div>
+                    <div class="text-container">
+                        <h4>Sed Expedita Odio</h4>
+                        <p>Ad possimus ea earum veniam illum quam. Dolore odio ve</p>
+                        <div class="text-block">
+                            <div class="music">Music</div>
+                            <div class="year">Min 1 year</div>
+                        </div>
+                        <div class="text-content">
+                            <div class="currency">&#36;99600.8</div>
+                            <div class="date">7/5/2022</div>
+                            <div class="name">Dublin</div>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <button type="button" class="btn">Details</button>
+                        <button type="submit" class="submit">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="card1">
+                    
+                    <img src="card3.jpeg">
+                
+                    <div class="overlay">
+                       <img src="music.svg">
+                    </div>
+                    <div class="text-container">
+                        <h4>Culpa</h4>
+                        <p>Recusandae esse et atque atque nihil voluptas. Pariatur quis quibusdam at.</p>
+                        <div class="text-block">
+                            <div class="music">Music</div>
+                            <div class="year">Min 1 year</div>
+                        </div>
+                        <div class="text-content">
+                            <div class="currency">&#36;9134.8</div>
+                            <div class="date">3/22/2022</div>
+                            <div class="name">San Ramone</div>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <button type="button" class="btn">Details</button>
+                        <button type="submit" class="submit">Buy Now</button>
+                    </div>
+                </div>
+                <div class="card1">
+                    
+                    <img src="card12.jpeg">
+                
+                    <div class="overlay">
+                       <img src="music.svg">
+                    </div>
+                    <div class="text-container">
+                        <h4>Dignissimos Doloribus Sed</h4>
+                        <p>Sit minima ut placeat quae esse. Ul</p>
+                        <div class="text-block">
+                            <div class="music">Music</div>
+                            <div class="year">Min 1 year</div>
+                        </div>
+                        <div class="text-content">
+                            <div class="currency">&#36;34189.9</div>
+                            <div class="date">5/7/2022</div>
+                            <div class="name">Fremont</div>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <button type="button" class="btn">Details</button>
+                        <button type="submit" class="submit">Buy Now</button>
+                    </div>
+                </div>
+                <div class="card1">
+                    
+                    <img src="card13.jpeg">
+                
+                    <div class="overlay">
+                       <img src="music.svg">
+                    </div>
+                    <div class="text-container">
+                        <h4>Perspiciatis Dolore</h4>
+                        <p>Et architecto enim est illum aperiam ut. Optio doloribus rem fugit incidun</p>
+                        <div class="text-block">
+                            <div class="music">Music</div>
+                            <div class="year">Min 1 year</div>
+                        </div>
+                        <div class="text-content">
+                            <div class="currency">&#36;43691.8</div>
+                            <div class="date">12/31/2020</div>
+                            <div class="name">Fremont</div>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <button type="button" class="btn">Details</button>
+                        <button type="submit" class="submit">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="cards-last">
+                <div class="card1">
+                    
+                    <img src="card14.jpeg">
+                
+                    <div class="overlay">
+                       <img src="music.svg">
+                    </div>
+                    <div class="text-container">
+                        <h4>Animi Veritatis Et</h4>
+                        <p>Nemo expedita omnis non dolores. Soluta id perspiciatis quae aut consectetur</p>
+                        <div class="text-block">
+                            <div class="music">Music</div>
+                            <div class="year">Min 1 year</div>
+                        </div>
+                        <div class="text-content">
+                            <div class="currency">&#36;23035.3</div>
+                            <div class="date">8/29/2022</div>
+                            <div class="name">Dublin</div>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <button type="button" class="btn">Details</button>
+                        <button type="submit" class="submit">Buy Now</button>
+                    </div>
+                </div>
+                <div class="card1" id="cards1">
+                    
+                    <img src="card15.jpeg">
+                
+                    <div class="overlay">
+                       <img src="music.svg">
+                    </div>
+                    <div class="text-container">
+                        <h4>Vero</h4>
+                        <p>A consequatur aut voluptas et excepturi qui quisquam. Ea</p>
+                        <div class="text-block">
+                            <div class="music">Music</div>
+                            <div class="year">Min 1 year</div>
+                        </div>
+                        <div class="text-content">
+                            <div class="currency">&#36;2060.9</div>
+                            <div class="date">3/13/2022</div>
+                            <div class="name">Dublin</div>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <button type="button" class="btn">Details</button>
+                        <button type="submit" class="submit">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hidden">
+            <div class="events">
+                <div>
+                     <h4>Showing 20 Events</h4>
+                </div>
+                <div>
+                    <i class="fa-solid fa-grip-vertical" id="gridHidden"></i>
+                    <i class="fa-solid fa-list" id="listHidden"></i>
+                </div>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th><img src="card1.jpeg"></th>
+                        <th style="width: 100px;">Aut</th>
+                        <th style="background-color: #eee;">music<br>min 1 year</th>
+                        <th>29886.3</th>
+                        <th>3/22/2022</th>
+                        <th>Fremont</th>
+                        <th><button class="btn" style="background-color: #eee; color: black;">Details</button><br>
+                        <button class="submit" style="background-color: #5340ff; color: white;">Buy Now</button></th>
+                    </tr>
+                </thead>
+            </table>
+            <table>
+                <thead>
+                    <tr>
+                        <th><img src="card2.jpeg"></th>
+                        <th style="width: 100px;">Explicabo Consectetur Fugit Corrupti</th>
+                        <th style="background-color: #eee;">music<br>min 1 year</th>
+                        <th>55257.1</th>
+                        <th>5/2/2022</th>
+                        <th>San Ramone</th>
+                        <th><button class="btn" style="background-color: #eee; color: black;">Details</button><br>
+                        <button class="submit" style="background-color: #5340ff; color: white;">Buy Now</button></th>
+                    </tr>
+                </thead>
+            </table>
+            <table>
+                <thead>
+                    <tr>
+                        <th><img src="card3.jpeg"></th>
+                        <th style="width: 100px;">Enim</th>
+                        <th style="background-color: #eee;">music<br>min 1 year</th>
+                        <th>67453.1</th>
+                        <th>10/29/2020</th>
+                        <th>India</th>
+                        <th><button class="btn" style="background-color: #eee; color: black;">Details</button><br>
+                        <button class="submit" style="background-color: #5340ff; color: white;">Buy Now</button></th>
+                    </tr>
+                </thead>
+            </table>
+            <table>
+                <thead>
+                    <tr>
+                        <th><img src="card4.jpeg"></th>
+                        <th style="width: 100px;">Ut Aliquid Nobis Et</th>
+                        <th style="background-color: #eee;">music<br>min 1 year</th>
+                        <th>99012.5</th>
+                        <th>2/15/2021</th>
+                        <th>San Jose</th>
+                        <th><button class="btn" style="background-color: #eee; color: black;">Details</button><br>
+                        <button class="submit" style="background-color: #5340ff; color: white;">Buy Now</button></th>
+                    </tr>
+                </thead>
+            </table>
+            <table>
+                <thead>
+                    <tr>
+                        <th><img src="card5.jpeg"></th>
+                        <th style="width: 100px;">Qui Maiores Sit Sed</th>
+                        <th style="background-color: #eee;">music<br>min 1 year</th>
+                        <th>96204.8</th>
+                        <th>3/5/2022</th>
+                        <th>Dublin</th>
+                        <th><button class="btn" style="background-color: #eee; color: black;">Details</button><br>
+                        <button class="submit" style="background-color: #5340ff; color: white;">Buy Now</button></th>
+                    </tr>
+                </thead>
+            </table>
+            <table>
+                <thead>
+                    <tr>
+                        <th><img src="card6.jpeg"></th>
+                        <th style="width: 100px;">Voluptatem</th>
+                        <th style="background-color: #eee;">music<br>min 1 year</th>
+                        <th>23795.2</th>
+                        <th>2/18/2022</th>
+                        <th>Dublin</th>
+                        <th><button class="btn" style="background-color: #eee; color: black;">Details</button><br>
+                        <button class="submit" style="background-color: #5340ff; color: white;">Buy Now</button></th>
+                    </tr>
+                </thead>
+            </table>
+            <table>
+                <thead>
+                    <tr>
+                        <th><img src="card7.jpeg"></th>
+                        <th style="width: 100px;">Et Nostrum</th>
+                        <th style="background-color: #eee;">music<br>min 1 year</th>
+                        <th>12037.7</th>
+                        <th>4/29/2022</th>
+                        <th>San Jose</th>
+                        <th><button class="btn" style="background-color: #eee; color: black;">Details</button><br>
+                        <button class="submit" style="background-color: #5340ff; color: white;">Buy Now</button></th>
+                    </tr>
+                </thead>
+            </table>
+            <table>
+                <thead>
+                    <tr>
+                        <th><img src="card3.jpeg"></th>
+                        <th style="width: 100px;">Et</th>
+                        <th style="background-color: #eee;">music<br>min 1 year</th>
+                        <th>82537.7</th>
+                        <th>11/10/2020</th>
+                        <th>Fremont</th>
+                        <th><button class="btn" style="background-color: #eee; color: black;">Details</button><br>
+                        <button class="submit" style="background-color: #5340ff; color: white;">Buy Now</button></th>
+                    </tr>
+                </thead>
+            </table>
+            <table>
+                <thead>
+                    <tr>
+                        <th><img src="card7.jpeg"></th>
+                        <th style="width: 100px;">Cum Excepturi Sed</th>
+                        <th style="background-color: #eee;">music<br>min 1 year</th>
+                        <th>88574.0</th>
+                        <th>10/26/2020</th>
+                        <th>Dublin</th>
+                        <th><button class="btn" style="background-color: #eee; color: black;">Details</button><br>
+                        <button class="submit" style="background-color: #5340ff; color: white;">Buy Now</button></th>
+                    </tr>
+                </thead>
+            </table>
+            <table>
+                <thead>
+                    <tr>
+                        <th><img src="card8.jpeg"></th>
+                        <th style="width: 100px;">Cum</th>
+                        <th style="background-color: #eee;">music<br>min 1 year</th>
+                        <th>88755.0</th>
+                        <th>6/1/2021</th>
+                        <th>San Ramone</th>
+                        <th><button class="btn" style="background-color: #eee; color: black;">Details</button><br>
+                        <button class="submit" style="background-color: #5340ff; color: white;">Buy Now</button></th>
+                    </tr>
+                </thead>
+            </table>
+            <table>
+                <thead>
+                    <tr>
+                        <th><img src="card9.jpeg"></th>
+                        <th style="width: 100px;">Dolore</th>
+                        <th style="background-color: #eee;">music<br>min 1 year</th>
+                        <th>31280.8</th>
+                        <th>7/18/2022</th>
+                        <th>Fremont</th>
+                        <th><button class="btn" style="background-color: #eee;">Details</button><br>
+                        <button class="submit" style="background-color: #5340ff; color: white;">Buy Now</button></th>
+                    </tr>
+                </thead>
+            </table>
+            <table>
+                <thead>
+                    <tr>
+                        <th><img src="card5.jpeg"></th>
+                        <th style="width: 100px;">Autem</th>
+                        <th style="background-color: #eee;">music<br>min 1 year</th>
+                        <th>48112.9</th>
+                        <th>8/24/2021</th>
+                        <th>Fremont</th>
+                        <th><button class="btn" style="background-color: #eee;">Details</button><br>
+                        <button class="submit" style="background-color: #5340ff; color: white;">Buy Now</button></th>
+                    </tr>
+                </thead>
+            </table>
+            <table>
+                <thead>
+                    <tr>
+                        <th><img src="card10.jpeg"></th>
+                        <th style="width: 100px;">Iste</th>
+                        <th style="background-color: #eee;">music<br>min 1 year</th>
+                        <th>98769.6</th>
+                        <th>10/17/2021</th>
+                        <th>Dublin</th>
+                        <th><button class="btn" style="background-color: #eee;">Details</button><br>
+                        <button class="submit" style="background-color: #5340ff; color: white;">Buy Now</button></th>
+                    </tr>
+                </thead>
+            </table>
+            <table>
+                <thead>
+                    <tr>
+                        <th><img src="card11.jpeg"></th>
+                        <th style="width: 100px;">Pariatur Nemo Distinctio Optio</th>
+                        <th style="background-color: #eee;">music<br>min 1 year</th>
+                        <th>69942.1</th>
+                        <th>1/9/2022</th>
+                        <th>Fremont</th>
+                        <th><button class="btn" style="background-color: #eee;">Details</button><br>
+                        <button class="submit" style="background-color: #5340ff; color: white;">Buy Now</button></th>
+                    </tr>
+                </thead>
+            </table>
+            <table>
+                <thead>
+                    <tr>
+                        <th><img src="card11.jpeg"></th>
+                        <th style="width: 100px;">Sed Expedita Odio</th>
+                        <th style="background-color: #eee;">music<br>min 1 year</th>
+                        <th>99600.8</th>
+                        <th>7/5/2022</th>
+                        <th>Dublin</th>
+                        <th><button class="btn" style="background-color: #eee;">Details</button><br>
+                        <button class="submit" style="background-color: #5340ff; color: white;">Buy Now</button></th>
+                    </tr>
+                </thead>
+            </table>
+            <table>
+                <thead>
+                    <tr>
+                        <th><img src="card3.jpeg"></th>
+                        <th style="width: 100px;">Culpa</th>
+                        <th style="background-color: #eee;">music<br>min 1 year</th>
+                        <th>9134.8</th>
+                        <th>3/27/2021</th>
+                        <th>San Ramone</th>
+                        <th><button class="btn" style="background-color: #eee;">Details</button><br>
+                        <button class="submit" style="background-color: #5340ff; color: white;">Buy Now</button></th>
+                    </tr>
+                </thead>
+            </table>
+            <table>
+                <thead>
+                    <tr>
+                        <th><img src="card12.jpeg"></th>
+                        <th style="width: 100px;">Dignissimos Doloribus Sed</th>
+                        <th style="background-color: #eee;">music<br>min 1 year</th>
+                        <th>34189.9</th>
+                        <th>5/7/2022</th>
+                        <th>Fremont</th>
+                        <th><button class="btn" style="background-color: #eee;">Details</button><br>
+                        <button class="submit" style="background-color: #5340ff; color: white;">Buy Now</button></th>
+                    </tr>
+                </thead>
+            </table>
+            <table>
+                <thead>
+                    <tr>
+                        <th><img src="card13.jpeg"></th>
+                        <th style="width: 100px;">Perspiciatis Dolore</th>
+                        <th style="background-color: #eee;">music<br>min 1 year</th>
+                        <th>43691.8</th>
+                        <th>12/31/2020</th>
+                        <th>Fremont</th>
+                        <th><button class="btn" style="background-color: #eee;">Details</button><br>
+                        <button class="submit" style="background-color: #5340ff; color: white;">Buy Now</button></th>
+                    </tr>
+                </thead>
+            </table>
+            <table>
+                <thead>
+                    <tr>
+                        <th><img src="card14.jpeg"></th>
+                        <th style="width: 100px;">Animi Veritatis Et</th>
+                        <th style="background-color: #eee;">music<br>min 1 year</th>
+                        <th>23035.3</th>
+                        <th>8/29/2022</th>
+                        <th>Dublin</th>
+                        <th><button class="btn" style="background-color: #eee;">Details</button><br>
+                        <button class="submit" style="background-color: #5340ff; color: white;">Buy Now</button></th>
+                    </tr>
+                </thead>
+            </table>
+            <table>
+                <thead>
+                    <tr>
+                        <th><img src="card15.jpeg"></th>
+                        <th style="width: 100px;">Vero</th>
+                        <th style="background-color: #eee;">music<br>min 1 year</th>
+                        <th>2060.9</th>
+                        <th>3/13/2022</th>
+                        <th>Dublin</th>
+                        <th><button class="btn" style="background-color: #eee;">Details</button><br>
+                        <button class="submit" style="background-color: #5340ff; color: white;">Buy Now</button></th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+    </div>
+    <div class="content1">
+        <h4>Stay in the loop</h4>
+        <p>Get notified about new events,discounts and much more!</p>
+        <div class="another-form">
+             <form id="w-email">
+                 <input type="email" placeholder="hari@gmai.com">
+                 <button type="submit">Create alerts</button>
+             </form>
+        </div>
+    </div>
+    <script src="script.js">
+    //     document.querySelector('#list').addEventListener('click', () => {
+    // document.querySelector('.hidden').style.display = 'block';
+    // document.querySelector('.section-right').style.display = 'none';
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,796 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Jost;
+}
+.header{
+    background-color: #5340ff;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.header img{
+    width: 60px;
+    height: 50px;
+}
+.header .birdlogo-text{
+    color: white;
+}
+.logotext{
+   display: flex;
+}
+.subtext{
+    color: #b4b4b4;
+    padding-bottom: 10px;
+    display: none;
+}
+.spacer{
+    flex: 1;
+}
+.navigation{
+    padding-top: 10px;
+}
+.menu{
+    color: white;
+    text-decoration: none;
+    padding-left: 20px;
+}
+.container{
+    padding-top: 100px;
+    padding-inline: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fafafa;
+}
+.section-left{
+    width: 17%;
+    position: fixed;
+}
+.search-bar input{
+    height: 100%;
+    margin-bottom: 0px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 8px;
+    border: 1px none white;
+    border-radius: 5px;
+    box-shadow: none;
+    line-height: 16px;
+    width: 250px;
+}
+.search-bar{
+    padding-bottom: 10px;
+}
+.search-bar i{
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 18px;
+    opacity: 0.3;
+    padding-bottom: 10px;
+}
+.location h4{
+    padding-left: 20px;
+}
+#icon{
+    padding-left: 140px;
+    cursor: pointer;
+}
+.places{
+    display: flex;
+    padding-top: 20px;
+}
+.country{
+    padding-left: 15px;
+}
+.margin{
+    padding-left: 20px;
+}
+.places i{
+    opacity: 0.3;
+    padding-left: 15px;
+}
+.list{
+    display: none;
+}
+
+.clear-filter{
+    padding-left: 40px;
+}
+.clear-filter button{
+    background-color: #dad9e0;
+    border: none;
+    padding-block: 10px;
+    padding-inline: 40px;
+    margin-top: 20px;
+}
+.content{
+    padding-top: 20px;
+    padding-left: 15px;
+    background-color: #fafafa;
+    margin-top: 10px;
+    border-radius: 10px
+}
+.content h4{
+    padding-bottom: 15px;
+}
+.content p{
+    padding-bottom: 10px;
+}
+.another-form input{
+    width: 230px;
+    border: none white;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    background-color: #dad9e0;;
+}
+.another-form button{
+     background-color: #5340ff;
+     color: white;
+     margin-top: 10px;
+     padding: 8px;
+     border-radius: 5px;
+    border: 1px solid;
+   
+}
+.section-right{
+    width: 80%;
+    padding-left: 21%;
+   display: block;
+}
+.events{
+    display: flex;
+    justify-content: space-between;    
+}
+#gridSectionRight{
+    border-radius: 100%;
+    background-color: blue;
+    padding: 10px;
+    color: white;
+}
+.events h4{
+    font-size: 30px;
+    padding-bottom: 20px;
+    padding-inline: 20px;
+}
+
+.overlay img{
+    width: 50px;
+    height: 50px;
+    margin-top: 0px;
+    padding: 0px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #dbdbdb;
+    border-radius: 6px;
+    background-color: white;
+    
+}
+.text-container{
+    height: 200px;
+}
+.text{
+    height: 120px;
+}
+.overlay{
+    margin-top: -40px;
+    padding-left: 15px;
+}
+.cards{
+    padding-left: 20px;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 40px;
+}
+.card1{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: white;
+}
+.card1 img{
+    clip-path: polygon(0 0, 100% 0%,100% 88%,0% 77%);
+}
+.text-block{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.music{
+   background-color: #dad9e0; 
+}
+.year{
+    background-color: #dad9e0;
+}
+.text-container h4{
+      padding-left: 10px;
+      
+}
+.text-content{
+    display: flex;
+    justify-content: space-around;
+}
+.text-container p{
+    padding-left: 10px;
+   height: 100px;
+}
+.button{
+    display: flex;
+    justify-content: space-around;
+}
+.button button{
+    border: 1px none white;
+    background-color: #b4b4b4;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.button .submit{
+    background-color: #5340ff;
+    color: white;
+    cursor: pointer;
+}
+.cards-last{
+    padding-left: 20px;
+    display: flex;
+   
+    padding-top: 40px
+}
+.cards-last #cards1{
+    margin-left: 40px;
+}
+.hidden th img{
+    width: 60px;
+}
+.hidden{
+    padding-left: 20%;
+    display: none;
+}
+table{
+    width: 100%;
+    border: 1px solid grey;
+    padding-block: 25px;
+}
+th button{
+    padding: 5px;
+    margin-block: 5px;
+    border: 1px none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+th{
+    width: 100px;
+
+}
+.events i{
+   cursor: pointer;
+}
+ #listHidden{
+    border-radius: 100%;
+    background-color: blue;
+    padding: 10px;
+    color: white;
+}
+.hidden .events #grid{
+    border-radius: 100%;
+    padding: 10px;
+    color: black;
+    background-color: #fafafa;
+    
+}
+.aut-container img{
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+}
+.music1 img{
+    width: 200px;
+    height: 200px;
+    margin-top: -100px;
+    margin-left: 20px;
+    /* padding: 0px; */
+    border-style: solid;
+    border-width: 1px;
+    border-color: #d6d6d6;
+    border-radius: 5px;
+    background-color: #fff;
+}
+.event{
+    max-width: 1440px;
+    padding-right: 20px;
+    padding-left: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.event-container{
+    display: flex;
+    flex-direction: column;
+}
+.event-card{
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 1px 1px 30px 0 rgba(0, 0, 0, 0.06);
+}
+.block2{
+    display: flex;
+    justify-content: space-between;
+}
+.block2 h1{
+    font-weight: 700px;
+}
+#para{
+    display: inline;
+    font-size: 20px;
+    line-height: 1.5;
+}
+.blue {
+    color: #5340ff;
+}
+.dot{
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 25px;
+}
+.fremont{
+    color: #909090;
+    font-size: 20px;
+    line-height: 1.5;
+}
+.flex{
+    display: flex;
+    flex-direction: column;
+}
+#ion{
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 40px;
+    cursor: pointer;
+}
+.event-container{
+    width: 65%;
+}
+iframe{
+    width: 100%;
+    height: 60vh;
+}
+.pages h2{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 36px;
+    line-height: 50px;
+    font-weight: 400;
+}
+.pages p{
+    margin-bottom: 10px;
+}
+.pages h3{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 46px;
+    font-weight: 700;
+}
+.pages blockquote{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding: 15px 30px;
+    border-left: 5px solid #e2e2e2;
+    font-size: 20px;
+    line-height: 34px;
+}
+.map img{
+    width: -webkit-fill-available;
+}
+.end-para{
+    display: inline;
+    color: #909090;
+    font-size: 20px;
+    line-height: 1.5;
+}
+.event-right{
+    width: 30%;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+}
+form label{
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+form input{
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    padding-block: 18px;
+    margin-bottom: 20px;
+}
+.dollar{
+     color: blue;
+     font-size: 40px;
+}
+select{
+    padding-block: 10px;
+    margin-bottom: 10px;
+    background-color: #f0f0f0;
+}
+button{
+    padding-block: 10px;
+    color: white;
+    background-color: #5340ff;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+.stack h3{
+    font-size: 24px;
+    line-height: 1.1;
+    margin-bottom: 16px;
+}
+.stack img{
+    width: 80px;
+    border-radius: 50%;
+}
+.stack{
+    display: flex;
+    align-items: center;
+}
+.stack p{
+    padding-left: 20px;
+    font-size: 25px;
+}
+.head{
+    margin-bottom: 15px;
+    font-size: 30px;
+
+}
+.queue{
+    display: inline-flex;
+    margin-top: 20px;
+}
+.queue p{
+    font-size: 25px;
+    padding-left: 15px;
+}
+.october{
+    color: #5340ff;
+}
+.btn{
+    color: black;
+}
+.thank-you-message{
+    display: none;
+}
+
+/* .logotext {
+    display: flex;
+    align-items: center;
+}
+
+.bird img {
+    width: 50px;
+    height: auto;
+}
+
+.birdevents {
+    margin-left: 10px;
+}
+
+.birdlogo-text {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navigation {
+    display: flex;
+}
+
+.menu {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+}
+*/
+.menu-toggle {
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.menu-toggle i {
+    font-size: 24px;
+    padding-block: 14px;
+    color: #dad9e0;
+} 
+
+/* Responsive styles */
+
+
+@media (max-width: 480px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navigation {
+        flex-direction: column;
+        width: 100%;
+        display: none; /* Hide by default */
+    }
+
+    .navigation.active {
+        display: flex; /* Show when active */
+        
+    }
+
+    .menu {
+        margin: 10px 0;
+    }
+
+    .spacer {
+        display: none;
+    }
+
+    .logotext {
+        width: 100%;
+    }
+    .birdlogo-text {
+        font-size: 30px;
+    }
+    .menu-toggle {
+        display: block;
+    }
+    .menu {
+        font-size: 16px;
+    }
+    #listSectionRight{
+        display: none;
+    }
+    .cards{
+        padding: 0px;
+        display: block;
+    }
+    .hidden{
+        display: none;
+    }
+    .card1{
+        width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: white;
+    margin-bottom: 30px;
+    }
+    .text-block{
+        display: flex;
+    justify-content: space-around;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    }
+    .text-container p{
+        padding-left: 10px;
+    height: 80px;
+    }
+    .text-container{
+        height: 140px;
+    }
+    .button button{
+        border: 1px none white;
+    background-color: #b4b4b4;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 130px;
+    }
+    .cards-last{
+        padding-left: 0px;
+     display: block;
+     padding-top: 0px;
+    }
+    .cards-last #cards1 {
+     margin-left: 0px;
+    }
+    .text{
+        height: 100px;
+    }
+    .another-form button{
+        width: 100%;
+    }
+    .another-form input{
+        width: 100%;
+    }
+    .section-left{
+        display: none;
+    }
+    .section-right{
+        padding-left: 0px;
+    }
+    #gridSectionRight{
+        margin-top: 10px;
+    }
+    .section-right{
+        width: 100%;
+    }
+    .events{
+        display: flex;
+        justify-content: space-between;
+    }
+    .event{
+        display: block;
+     }
+     .event-container{
+        width: 100%;
+     }
+     .event-right{
+        width: 100%;
+     }
+     .event-card{
+        padding: 0px;
+     }
+     .aut-container img{
+        height: 250px;
+     }
+     .music1 img{
+        width: 140px;
+        height: 140px;
+     }
+     .content1{
+        padding-top: 20px;
+        padding-left: 15px;
+        background-color: #fafafa;
+        margin-top: 10px;
+        border-radius: 10px;
+        padding-inline: 45px;
+    }
+    .content1 h4{
+        padding-bottom: 15px;
+    }
+    .content1 p{
+        padding-bottom: 10px;
+    }
+    
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+ 
+
+    
+    .section-left{
+        display: none;
+    }
+    .section-right{
+        padding-left: 0px;
+    }
+    
+    #gridSectionRight{
+        margin-top: 10px;
+    }
+    .section-right{
+        width: 100%;
+    }
+    .events{
+        display: flex;
+        justify-content: space-between;
+    }
+    .hidden{
+        padding-left: 0%;
+    }
+    /* .cards{
+        padding-left: 20px;
+        padding-top: 40px;
+        display: block;
+    } */
+     .event{
+        display: block;
+     }
+     .event-container{
+        width: 100%;
+     }
+     .event-right{
+        width: 100%;
+     }
+     .content{
+        padding-inline: 70px;
+     }
+     .another-form{
+        width: 100%;
+     }
+     .another-form input{
+        width: 100%;
+     }
+     .content1{
+        padding-top: 20px;
+        padding-left: 15px;
+        background-color: #fafafa;
+        margin-top: 10px;
+        border-radius: 10px;
+        padding-inline: 45px;
+    }
+    .content1 h4{
+        padding-bottom: 15px;
+    }
+    .content1 p{
+        padding-bottom: 10px;
+    }
+}
+@media screen and (min-width: 769px) and (max-width: 1200px){
+    .search-bar input{
+        width: 170px;
+    }
+    .another-form input{
+        width: 160px;
+    }
+    .content1{
+        display: none;
+    }
+    .clear-filter{
+        margin-left: 15px;
+        padding-left: 0px;
+    }
+    #icon{
+        padding-left: 40px;
+    }
+}
+@media screen and (min-width: 1201px) and (max-width: 1400px){
+    .search-bar input{
+        width: 200px;
+    }
+    .another-form input{
+        width: 160px;
+    }
+    .content1{
+        display: none;
+    }
+    .clear-filter{
+        margin-left: 15px;
+        padding-left: 0px;
+    }
+    #icon{
+        padding-left: 100px;
+    }
+    .another-form button{
+        width: 160px;
+    }
+    .clear-filter button{
+        width: 180px;
+    }
+}
+@media screen and (min-width: 1401px){
+    .search-bar input{
+        width: 235px;
+        margin-left: 15px;
+    }
+    .another-form input{
+        width: 235px;
+    }
+    .content1{
+        display: none;
+    }
+    .clear-filter{
+        margin-left: 15px;
+        padding-left: 0px;
+    }
+    #icon{
+        padding-left: 150px;
+    }
+    .another-form button{
+        width: 235px;
+    }
+    .clear-filter button{
+        width: 235px;
+    }
+}
