@@ -12,6 +12,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" 
 rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <div class="header">
@@ -38,10 +39,10 @@ rel="stylesheet">
         
             <div class="section-left">
                 <div class="form">
-                    <form id="email">
+                    <form id="emails">
                         <div class="search-bar">
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                            <input type="text" placeholder="           search">
+                            <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                            <input type="text" placeholder="search for anything">
                         </div>
                     </form>
                 </div>
@@ -50,27 +51,32 @@ rel="stylesheet">
                         <h4>Locations<i class="fa-solid fa-caret-down" id="icon"></i></h4>
                         <div class="list">
                             <div class="places">
-                                 <i class="fa-solid fa-magnifying-glass"></i>
+                                <i class="fa-solid fa-magnifying-glass icon-search"></i>
+                                <i class="fa-solid fa-location-dot" id="icon-location"></i>
                                  <div class="country">India</div>
                                  <div class="margin" style="padding-left: 70px;">1</div>
                             </div>
                             <div class="places">
-                                <i class="fa-solid fa-magnifying-glass"></i>
+                                <i class="fa-solid fa-magnifying-glass icon-search"></i>
+                                <i class="fa-solid fa-location-dot" id="icon-location"></i>
                                 <div class="country">San Ramone</div>
                                 <div class="margin">3</div>
                            </div>
                            <div class="places">
-                                <i class="fa-solid fa-magnifying-glass"></i>
+                            <i class="fa-solid fa-magnifying-glass icon-search"></i>
+                            <i class="fa-solid fa-location-dot" id="icon-location"></i>
                                 <div class="country">Dublin</div>
                                 <div class="margin" style="padding-left: 55px;">7</div>
                            </div>
                            <div class="places">
-                                <i class="fa-solid fa-magnifying-glass"></i>
+                            <i class="fa-solid fa-magnifying-glass icon-search"></i>
+                            <i class="fa-solid fa-location-dot" id="icon-location"></i>
                                 <div class="country">San Jose</div>
                                 <div class="margin" style="padding-left: 45px;">2</div>
                            </div>
                            <div class="places">
-                                <i class="fa-solid fa-magnifying-glass"></i>
+                            <i class="fa-solid fa-magnifying-glass icon-search"></i>
+                            <i class="fa-solid fa-location-dot" id="icon-location"></i>
                                 <div class="country">Fremont</div>
                                 <div class="margin" style="padding-left: 45px;">7</div>
                            </div>
@@ -96,12 +102,13 @@ rel="stylesheet">
                 <div>
                      <h4>Showing 20 Events</h4>
                 </div>
-                <div>
+                <div style="margin-inline: 10px;">
                     <i class="fa-solid fa-grip-vertical" id="gridSectionRight"></i>
                     <i class="fa-solid fa-list" id="listSectionRight"></i>
                 </div>
             </div>
-            <div class="cards">
+            <div id="loop"></div>
+            <!-- <div class="cards">
                 <div class="card1">
                     
                     <img src="card1.jpeg">
@@ -179,8 +186,8 @@ rel="stylesheet">
                         <button type="submit" class="submit">Buy Now</button>
                     </div>
                 </div>
-            </div>
-            <div class="cards">
+            </div> -->
+            <!-- <div class="cards">
                 <div class="card1">
                     
                     <img src="card4.jpeg">
@@ -256,8 +263,8 @@ rel="stylesheet">
                         <button type="submit" class="submit">Buy Now</button>
                     </div>
                 </div>
-            </div>
-            <div class="cards">
+            </div> -->
+            <!-- <div class="cards">
                 <div class="card1">
                     
                     <img src="card7.jpeg">
@@ -616,7 +623,7 @@ rel="stylesheet">
                         <button type="submit" class="submit">Buy Now</button>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
         <div class="hidden">
             <div class="events">
@@ -632,7 +639,7 @@ rel="stylesheet">
                 <thead>
                     <tr>
                         <th><img src="card1.jpeg"></th>
-                        <th style="width: 100px;">Aut</th>
+                        <th style="width: 100px; font-weight: bold;" >Aut</th>
                         <th style="background-color: #eee;">music<br>min 1 year</th>
                         <th>29886.3</th>
                         <th>3/22/2022</th>
@@ -646,7 +653,7 @@ rel="stylesheet">
                 <thead>
                     <tr>
                         <th><img src="card2.jpeg"></th>
-                        <th style="width: 100px;">Explicabo Consectetur Fugit Corrupti</th>
+                        <th style="width: 100px; font-weight: bold;">Explicabo Consectetur Fugit Corrupti</th>
                         <th style="background-color: #eee;">music<br>min 1 year</th>
                         <th>55257.1</th>
                         <th>5/2/2022</th>
@@ -660,7 +667,7 @@ rel="stylesheet">
                 <thead>
                     <tr>
                         <th><img src="card3.jpeg"></th>
-                        <th style="width: 100px;">Enim</th>
+                        <th style="width: 100px; font-weight: bold;">Enim</th>
                         <th style="background-color: #eee;">music<br>min 1 year</th>
                         <th>67453.1</th>
                         <th>10/29/2020</th>
@@ -674,7 +681,7 @@ rel="stylesheet">
                 <thead>
                     <tr>
                         <th><img src="card4.jpeg"></th>
-                        <th style="width: 100px;">Ut Aliquid Nobis Et</th>
+                        <th style="width: 100px; font-weight: bold;">Ut Aliquid Nobis Et</th>
                         <th style="background-color: #eee;">music<br>min 1 year</th>
                         <th>99012.5</th>
                         <th>2/15/2021</th>
@@ -688,7 +695,7 @@ rel="stylesheet">
                 <thead>
                     <tr>
                         <th><img src="card5.jpeg"></th>
-                        <th style="width: 100px;">Qui Maiores Sit Sed</th>
+                        <th style="width: 100px; font-weight: bold;">Qui Maiores Sit Sed</th>
                         <th style="background-color: #eee;">music<br>min 1 year</th>
                         <th>96204.8</th>
                         <th>3/5/2022</th>
@@ -702,7 +709,7 @@ rel="stylesheet">
                 <thead>
                     <tr>
                         <th><img src="card6.jpeg"></th>
-                        <th style="width: 100px;">Voluptatem</th>
+                        <th style="width: 100px; font-weight: bold;">Voluptatem</th>
                         <th style="background-color: #eee;">music<br>min 1 year</th>
                         <th>23795.2</th>
                         <th>2/18/2022</th>
@@ -716,7 +723,7 @@ rel="stylesheet">
                 <thead>
                     <tr>
                         <th><img src="card7.jpeg"></th>
-                        <th style="width: 100px;">Et Nostrum</th>
+                        <th style="width: 100px; font-weight: bold;">Et Nostrum</th>
                         <th style="background-color: #eee;">music<br>min 1 year</th>
                         <th>12037.7</th>
                         <th>4/29/2022</th>
@@ -730,7 +737,7 @@ rel="stylesheet">
                 <thead>
                     <tr>
                         <th><img src="card3.jpeg"></th>
-                        <th style="width: 100px;">Et</th>
+                        <th style="width: 100px; font-weight: bold;">Et</th>
                         <th style="background-color: #eee;">music<br>min 1 year</th>
                         <th>82537.7</th>
                         <th>11/10/2020</th>
@@ -744,7 +751,7 @@ rel="stylesheet">
                 <thead>
                     <tr>
                         <th><img src="card7.jpeg"></th>
-                        <th style="width: 100px;">Cum Excepturi Sed</th>
+                        <th style="width: 100px; font-weight: bold;">Cum Excepturi Sed</th>
                         <th style="background-color: #eee;">music<br>min 1 year</th>
                         <th>88574.0</th>
                         <th>10/26/2020</th>
@@ -758,7 +765,7 @@ rel="stylesheet">
                 <thead>
                     <tr>
                         <th><img src="card8.jpeg"></th>
-                        <th style="width: 100px;">Cum</th>
+                        <th style="width: 100px; font-weight: bold;">Cum</th>
                         <th style="background-color: #eee;">music<br>min 1 year</th>
                         <th>88755.0</th>
                         <th>6/1/2021</th>
@@ -786,7 +793,7 @@ rel="stylesheet">
                 <thead>
                     <tr>
                         <th><img src="card5.jpeg"></th>
-                        <th style="width: 100px;">Autem</th>
+                        <th style="width: 100px;font-weight: bold;">Autem</th>
                         <th style="background-color: #eee;">music<br>min 1 year</th>
                         <th>48112.9</th>
                         <th>8/24/2021</th>
@@ -800,7 +807,7 @@ rel="stylesheet">
                 <thead>
                     <tr>
                         <th><img src="card10.jpeg"></th>
-                        <th style="width: 100px;">Iste</th>
+                        <th style="width: 100px;font-weight: bold;">Iste</th>
                         <th style="background-color: #eee;">music<br>min 1 year</th>
                         <th>98769.6</th>
                         <th>10/17/2021</th>
@@ -814,7 +821,7 @@ rel="stylesheet">
                 <thead>
                     <tr>
                         <th><img src="card11.jpeg"></th>
-                        <th style="width: 100px;">Pariatur Nemo Distinctio Optio</th>
+                        <th style="width: 100px; font-weight: bold;">Pariatur Nemo Distinctio Optio</th>
                         <th style="background-color: #eee;">music<br>min 1 year</th>
                         <th>69942.1</th>
                         <th>1/9/2022</th>
@@ -828,7 +835,7 @@ rel="stylesheet">
                 <thead>
                     <tr>
                         <th><img src="card11.jpeg"></th>
-                        <th style="width: 100px;">Sed Expedita Odio</th>
+                        <th style="width: 100px; font-weight: bold;">Sed Expedita Odio</th>
                         <th style="background-color: #eee;">music<br>min 1 year</th>
                         <th>99600.8</th>
                         <th>7/5/2022</th>
@@ -842,7 +849,7 @@ rel="stylesheet">
                 <thead>
                     <tr>
                         <th><img src="card3.jpeg"></th>
-                        <th style="width: 100px;">Culpa</th>
+                        <th style="width: 100px; font-weight: bold;">Culpa</th>
                         <th style="background-color: #eee;">music<br>min 1 year</th>
                         <th>9134.8</th>
                         <th>3/27/2021</th>
@@ -856,7 +863,7 @@ rel="stylesheet">
                 <thead>
                     <tr>
                         <th><img src="card12.jpeg"></th>
-                        <th style="width: 100px;">Dignissimos Doloribus Sed</th>
+                        <th style="width: 100px;font-weight: bold;">Dignissimos Doloribus Sed</th>
                         <th style="background-color: #eee;">music<br>min 1 year</th>
                         <th>34189.9</th>
                         <th>5/7/2022</th>
@@ -870,7 +877,7 @@ rel="stylesheet">
                 <thead>
                     <tr>
                         <th><img src="card13.jpeg"></th>
-                        <th style="width: 100px;">Perspiciatis Dolore</th>
+                        <th style="width: 100px; font-weight: bold;">Perspiciatis Dolore</th>
                         <th style="background-color: #eee;">music<br>min 1 year</th>
                         <th>43691.8</th>
                         <th>12/31/2020</th>
@@ -884,7 +891,7 @@ rel="stylesheet">
                 <thead>
                     <tr>
                         <th><img src="card14.jpeg"></th>
-                        <th style="width: 100px;">Animi Veritatis Et</th>
+                        <th style="width: 100px; font-weight: bold;">Animi Veritatis Et</th>
                         <th style="background-color: #eee;">music<br>min 1 year</th>
                         <th>23035.3</th>
                         <th>8/29/2022</th>
@@ -898,7 +905,7 @@ rel="stylesheet">
                 <thead>
                     <tr>
                         <th><img src="card15.jpeg"></th>
-                        <th style="width: 100px;">Vero</th>
+                        <th style="width: 100px; font-weight: bold;">Vero</th>
                         <th style="background-color: #eee;">music<br>min 1 year</th>
                         <th>2060.9</th>
                         <th>3/13/2022</th>
@@ -924,7 +931,23 @@ rel="stylesheet">
     //     document.querySelector('#list').addEventListener('click', () => {
     // document.querySelector('.hidden').style.display = 'block';
     // document.querySelector('.section-right').style.display = 'none';
-
+    // function fetchJSONData() {
+    //         fetch("./data.json")
+    //             .then((res) => {
+    //                 if (!res.ok) {
+    //                     throw new Error
+    //                         (`HTTP error! Status: ${res.status}`);
+    //                 }
+    //                 return res.json();
+    //             })
+    //             .then((data) => 
+    //                   console.log(data))
+    //             .catch((error) => 
+    //                    console.error("Unable to fetch data:", error));
+    //     }
+    //     fetchJSONData();
+               
+               
     </script>
 </body>
 </html>

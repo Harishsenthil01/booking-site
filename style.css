@@ -9,7 +9,7 @@
     position: relative;
     align-items: center;
     justify-content: space-between;
-    padding: 20px;
+    padding: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 .header img{
@@ -49,23 +49,14 @@
     width: 17%;
     position: fixed;
 }
-.search-bar input{
-    height: 100%;
-    margin-bottom: 0px;
-    padding-top: 18px;
-    padding-bottom: 18px;
-    padding-left: 8px;
-    border: 1px none white;
-    border-radius: 5px;
-    box-shadow: none;
-    line-height: 16px;
-    width: 250px;
-}
+/* .search-bar input{
+    margin-bottom: 10px;
+} */
 .search-bar{
-    padding-bottom: 10px;
+    background-color: white;
+    height: 55px;
 }
 .search-bar i{
-    position: absolute;
     margin-top: 20px;
     margin-left: 18px;
     opacity: 0.3;
@@ -81,6 +72,29 @@
 .places{
     display: flex;
     padding-top: 20px;
+    justify-content: space-evenly;
+    
+    align-items: center;
+}
+.places .icon-search {
+    margin-right: 10px;
+    transition: content 0.3s ease;
+}
+#icon-location{
+    display: none;
+}
+
+.places:hover .icon-search {
+    display: none;
+}
+
+.places:hover #icon-location {
+    display: inline;
+}
+
+.icon-location {
+    display: none;
+    margin-right: 10px;
 }
 .country{
     padding-left: 15px;
@@ -136,7 +150,7 @@
    
 }
 .section-right{
-    width: 80%;
+    width: 79%;
     padding-left: 21%;
    display: block;
 }
@@ -145,7 +159,7 @@
     justify-content: space-between;    
 }
 #gridSectionRight{
-    border-radius: 100%;
+    border-radius: 50%;
     background-color: blue;
     padding: 10px;
     color: white;
@@ -219,6 +233,9 @@
     padding-left: 10px;
    height: 100px;
 }
+.block button{
+    cursor: pointer;
+}
 .button{
     display: flex;
     justify-content: space-around;
@@ -245,7 +262,8 @@
     margin-left: 40px;
 }
 .hidden th img{
-    width: 60px;
+    width: 100px;
+    border-radius: 10px;
 }
 .hidden{
     padding-left: 20%;
@@ -262,10 +280,11 @@ th button{
     border: 1px none;
     border-radius: 5px;
     cursor: pointer;
+    width: 100px;
 }
 th{
     width: 100px;
-
+    font-weight: 400;
 }
 .events i{
    cursor: pointer;
@@ -289,16 +308,17 @@ th{
     height: 300px;
 }
 .music1 img{
-    width: 200px;
-    height: 200px;
+    width: 125px;
+    height: 150px;
     margin-top: -100px;
     margin-left: 20px;
-    /* padding: 0px; */
+    padding: 50px;
     border-style: solid;
     border-width: 1px;
     border-color: #d6d6d6;
     border-radius: 5px;
     background-color: #fff;
+    margin-bottom: 20px;
 }
 .event{
     max-width: 1440px;
@@ -352,6 +372,8 @@ th{
     justify-content: space-around;
     font-size: 40px;
     cursor: pointer;
+    opacity: 0.5;
+    padding-block: 10px;
 }
 .event-container{
     width: 65%;
@@ -396,6 +418,10 @@ iframe{
 .event-right{
     width: 30%;
 }
+#email{
+    background-color: #f0f0f0;
+
+}
 form{
     display: flex;
     flex-direction: column;
@@ -413,8 +439,9 @@ form label{
 form input{
     border-radius: 5px;
     background-color: #f0f0f0;
-    padding-block: 18px;
+    padding-block: 10px;
     margin-bottom: 20px;
+    border: 1px white none;
 }
 .dollar{
      color: blue;
@@ -430,7 +457,10 @@ button{
     color: white;
     background-color: #5340ff;
     border-radius: 5px;
-    margin-top: 20px;
+    margin-top: 10px;
+    padding-inline: 30px;
+    margin-bottom: 10px;
+    cursor: pointer;
 }
 .stack h3{
     font-size: 24px;
@@ -447,11 +477,13 @@ button{
 }
 .stack p{
     padding-left: 20px;
-    font-size: 25px;
+    font-size: 22px;
+    font-weight: 300;
 }
 .head{
     margin-bottom: 15px;
     font-size: 30px;
+    font-weight: 500;
 
 }
 .queue{
@@ -461,12 +493,14 @@ button{
 .queue p{
     font-size: 25px;
     padding-left: 15px;
+    font-weight: 300;
 }
 .october{
     color: #5340ff;
 }
 .btn{
     color: black;
+    cursor: pointer;
 }
 .thank-you-message{
     display: none;
@@ -518,14 +552,50 @@ button{
 } 
 
 /* Responsive styles */
+.card img{
+    width: 100%;
+    clip-path: polygon(0 0, 100% 0%,100% 88%,0% 77%);
+}
+.card .image{
+    width: 20%;
+    margin-top: -100px;
+    margin-bottom: 41px;
+    background-color: white;
+    margin-left: 15px;
+    border-radius: 5px
+}
+#loop {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 16px; /* Adjust the gap as needed */
+}
 
+.card {
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+
+.block button {
+    margin-right: 8px;
+}
 
 @media (max-width: 480px) {
     .header {
         flex-direction: column;
         align-items: flex-start;
     }
-
+    .container{
+        background-color: #eee;
+    }
     .navigation {
         flex-direction: column;
         width: 100%;
@@ -620,9 +690,9 @@ button{
     .section-right{
         padding-left: 0px;
     }
-    #gridSectionRight{
+    /* #gridSectionRight{
         margin-top: 10px;
-    }
+    } */
     .section-right{
         width: 100%;
     }
@@ -663,11 +733,60 @@ button{
     .content1 p{
         padding-bottom: 10px;
     }
+    .card img{
+        width: 100%;
+        clip-path: polygon(0 0, 100% 0%,100% 88%,0% 77%);
+    }
+    .card .image{
+        width: 20%;
+        margin-top: -100px;
+        margin-bottom: 41px;
+        background-color: white;
+        margin-left: 15px;
+        border-radius: 5px
+    }
+    .card h2{
+        margin-top: -50px;
+        padding-inline: 10px;
+    }
+    .date{
+        display: flex;
+        justify-content: space-around;
+    }
+    .component{
+        display: flex;
+       
+    }
+    .component .validity{
+        background-color: #f0f0f0;
+        margin-inline: 10px;
+    }
+    .btn{
+        background-color: #e2e2e2;
+    }
+    .card .desc{
+        height: 14vh;
+        padding-inline: 10px;
+    }
+    .card{
+        background-color: white;
+    margin-bottom: 30px;
+    }
+    .block{
+        display: flex;
+        justify-content: space-around;
+    }
+    .block button{
+        border: 1px none;
+    }
     
 }
 @media screen and (min-width: 481px) and (max-width: 768px) {
  
-
+    #loop {
+        grid-template-columns: repeat(2, 1fr); /* Two cards per row */
+        gap: 12px; /* Adjust the gap for this range if needed */
+    }
     
     .section-left{
         display: none;
@@ -676,9 +795,9 @@ button{
         padding-left: 0px;
     }
     
-    #gridSectionRight{
+    /* #gridSectionRight{
         margin-top: 10px;
-    }
+    } */
     .section-right{
         width: 100%;
     }
@@ -726,10 +845,58 @@ button{
     .content1 p{
         padding-bottom: 10px;
     }
+    .card h2{
+        margin-top: -50px;
+        padding-inline: 10px;
+ 
+    }
+    .date{
+        display: flex;
+        justify-content: space-around;
+    }
+    .component{
+        display: flex;
+       
+    }
+    .component .validity{
+        background-color: #f0f0f0;
+        margin-inline: 15px;
+        border-radius: 5px;
+    }
+    .btn{
+        background-color: #e2e2e2;
+    }
+    .card .desc{
+        padding-inline: 10px;
+    }
+    .card{
+        background-color: white;
+    margin-bottom: 30px;
+    }
+    .block{
+        display: flex;
+        justify-content: space-around;
+    }
+    .block button{
+        border: 1px none;
+    }
+    .text-comp{
+        height: 22vh;
+    }
 }
 @media screen and (min-width: 769px) and (max-width: 1200px){
+    #loop {
+        grid-template-columns: repeat(3, 1fr); /* Two cards per row */
+        gap: 30px; /* Adjust the gap for this range if needed */
+    }
     .search-bar input{
-        width: 170px;
+        width: 135px;
+        border: 1px none;
+        background-color: white;
+    }
+    #emails{
+        height: 8vh;
+        margin-bottom: 15px;
     }
     .another-form input{
         width: 160px;
@@ -737,20 +904,76 @@ button{
     .content1{
         display: none;
     }
+    .clear-filter button{
+        width: 160px;
+        cursor: pointer;
+    }
     .clear-filter{
         margin-left: 15px;
         padding-left: 0px;
     }
     #icon{
-        padding-left: 40px;
+        padding-left: 70px;
+    }
+    .card h2{
+        margin-top: -50px;
+        padding-inline: 10px;
+        line-height: 22px;
+    }
+    .date{
+        display: flex;
+        justify-content: space-around;
+    }
+    .component{
+        display: flex;
+       
+    }
+    .component .validity{
+        background-color: #f0f0f0;
+        margin-inline: 15px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .btn{
+        background-color: #e2e2e2;
+    }
+    .card .desc{
+        padding-inline: 10px;
+    }
+    .card{
+        background-color: white;
+    margin-bottom: 30px;
+    }
+    .block{
+        display: flex;
+        justify-content: space-around;
+    }
+    .block button{
+        padding-inline: 30px;
+        border-radius: 10px;
+        border: 1px white none;
+        font-weight: 500;
+    }
+    .text-comp{
+        height: 20svh;
     }
 }
 @media screen and (min-width: 1201px) and (max-width: 1400px){
+    #loop {
+        grid-template-columns: repeat(3, 1fr); /* Two cards per row */
+        gap: 30px; /* Adjust the gap for this range if needed */
+    }
     .search-bar input{
-        width: 200px;
+        width: 169px;
+        border: 1px none;
+        background-color: white;
+    }
+    #emails{
+        height: 9vh;
+        margin-bottom: 15px;
     }
     .another-form input{
-        width: 160px;
+        width: 190px;
     }
     .content1{
         display: none;
@@ -763,16 +986,69 @@ button{
         padding-left: 100px;
     }
     .another-form button{
-        width: 160px;
+        width: 190px;
     }
     .clear-filter button{
-        width: 180px;
+        width: 190px;
+        cursor: pointer;
+    }
+    .card h2{
+        margin-top: -50px;
+        padding-inline: 10px;
+        
+    }
+    .date{
+        display: flex;
+        justify-content: space-around;
+    }
+    .component{
+        display: flex;
+       
+    }
+    .component .validity{
+        background-color: #f0f0f0;
+        margin-inline: 25px;
+        border-radius: 5px;
+    }
+    .btn{
+        background-color: #e2e2e2;
+    }
+    .card .desc{
+    
+        padding-inline: 10px;
+    }
+    .card{
+        background-color: white;
+    margin-bottom: 30px;
+    }
+    .block{
+        display: flex;
+        justify-content: space-around;
+    }
+    .block button{
+        padding-inline: 45px;
+        border-radius: 10px;
+        border: 1px white none;
+        font-weight: 500;
+    }
+    .text-comp{
+        height: 18vh;
     }
 }
 @media screen and (min-width: 1401px){
+    #loop {
+        grid-template-columns: repeat(3, 1fr); /* Two cards per row */
+        gap: 30px; /* Adjust the gap for this range if needed */
+    }
     .search-bar input{
-        width: 235px;
+        width: 187px;
         margin-left: 15px;
+        background-color: white;
+        border: 1px white none;
+    }
+    #emails{
+        height: 7vh;
+        margin-bottom: 15px;
     }
     .another-form input{
         width: 235px;
@@ -785,12 +1061,54 @@ button{
         padding-left: 0px;
     }
     #icon{
-        padding-left: 150px;
+        padding-left: 130px;
     }
     .another-form button{
         width: 235px;
     }
     .clear-filter button{
         width: 235px;
+    }
+    .card h2{
+        margin-top: -50px;
+        padding-inline: 10px;
+
+    }
+    .date{
+        display: flex;
+        justify-content: space-around;
+    }
+    .component{
+        display: flex;
+       
+    }
+    .component .validity{
+        background-color: #f0f0f0;
+        margin-inline: 25px;
+        border-radius: 5px;
+    }
+    .btn{
+        background-color: #e2e2e2;
+    }
+    .card .desc{
+
+        padding-inline: 10px;
+    }
+    .card{
+        background-color: white;
+    margin-bottom: 30px;
+    }
+    .block{
+        display: flex;
+        justify-content: space-around;
+    }
+    .block button{
+        padding-inline: 45px;
+        border-radius: 10px;
+        border: 1px white none;
+        font-weight: 500;
+    }
+    .text-comp{
+        height: 12vh;
     }
 }
