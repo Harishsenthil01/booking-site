@@ -33,59 +33,59 @@
 // import user from "./data.json" assert { type: 'json' };
 
 // console.log(user)
-const frame = document.getElementById("loop");
-function fetchJSONData() {
-    fetch("./data.json")
-        .then((res) => {
-            if (!res.ok) {
-                throw new Error
-                    (`HTTP error! Status: ${res.status}`);
-            }
-            return res.json();
-        })
-        .then((data) => 
-            //   console.log(data)
-        data.users.map((element) => {
-          console.log(element);
-          let newDiv = document.createElement("div");
-          newDiv.id = element.id;
-          newDiv.className = "card";
-          newDiv.innerHTML = ` 
-            <img src=${element.imgurl}>
-            <img class="image" src=${element.img}>
-            <div class="text-comp">
-            <h2>${element.heading}</h2>
-            <p class="desc">${element.description}</p>
-            </div>
-            <div class="component">
-            <p class="validity">${element.component}</p>
-            <p class="validity">${element.validity}</p>
-            </div>
-            <div class="date">       <p>${element.currency}</p>
-            <p>${element.date}</p>
-            <p>${element.location}</p>
-            </div>
-            <div class="block">
-            <button class="btn">Details</button>
-            <button class="submit">Book now</button>
-            </div>`;
-          frame.appendChild(newDiv);
-          const detailsButton = newDiv.querySelector('.btn');
-                        const bookNowButton = newDiv.querySelector('.submit');
+// const frame = document.getElementById("loop");
+// function fetchJSONData() {
+//     fetch("./data.json")
+//         .then((res) => {
+//             if (!res.ok) {
+//                 throw new Error
+//                     (`HTTP error! Status: ${res.status}`);
+//             }
+//             return res.json();
+//         })
+//         .then((data) => 
+//             //   console.log(data)
+//         data.users.map((element) => {
+//           console.log(element);
+//           let newDiv = document.createElement("div");
+//           newDiv.id = element.id;
+//           newDiv.className = "card";
+//           newDiv.innerHTML = ` 
+//             <img src=${element.imgurl}>
+//             <img class="image" src=${element.img}>
+//             <div class="text-comp">
+//             <h2>${element.heading}</h2>
+//             <p class="desc">${element.description}</p>
+//             </div>
+//             <div class="component">
+//             <p class="validity">${element.component}</p>
+//             <p class="validity">${element.validity}</p>
+//             </div>
+//             <div class="date">       <p>${element.currency}</p>
+//             <p>${element.date}</p>
+//             <p>${element.location}</p>
+//             </div>
+//             <div class="block">
+//             <button class="btn">Details</button>
+//             <button class="submit">Book now</button>
+//             </div>`;
+//           frame.appendChild(newDiv);
+//           const detailsButton = newDiv.querySelector('.btn');
+//                         const bookNowButton = newDiv.querySelector('.submit');
 
-                        detailsButton.addEventListener('click', () => {
-                            window.location.href = 'aut.html';
-                        });
+//                         detailsButton.addEventListener('click', () => {
+//                             window.location.href = 'aut.html';
+//                         });
 
-                        bookNowButton.addEventListener('click', () => {
-                            window.location.href = 'aut.html';
-                        });
-        })
-    )
-        .catch((error) => 
-               console.error("Unable to fetch data:", error));
-}
-fetchJSONData();
+//                         bookNowButton.addEventListener('click', () => {
+//                             window.location.href = 'aut.html';
+//                         });
+//         })
+//     )
+//         .catch((error) => 
+//                console.error("Unable to fetch data:", error));
+// }
+// fetchJSONData();
 document.addEventListener('DOMContentLoaded', () => {
     const listSectionRight = document.querySelector('#listSectionRight');
     const gridSectionRight = document.querySelector('#gridSectionRight');
@@ -140,6 +140,124 @@ document.addEventListener('DOMContentLoaded', () => {
         })
     })
 });
+// const frames = document.getElementById("loops");
+
+// function fetchJSONData() {
+//     fetch("./main.json")
+//         .then((res) => {
+//             if (!res.ok) {
+//                 throw new Error(`HTTP error! Status: ${res.status}`);
+//             }
+//             return res.json();
+//         })
+//         .then((data) => {
+//             data.organizer.map((element) => {
+//                 console.log(element);
+//                 let newDiv = document.createElement("div");
+//                 newDiv.id = element.id;
+//                 newDiv.className = "card";
+//                 newDiv.innerHTML = ` 
+//                     <img src="${element.url}">
+//                     <img class="image" src="${element.images}">
+//                     <div class="text-comp">
+//                         <h2>${element.head}</h2>
+//                         <p class="desc">${element.descript}</p>
+//                     </div>
+//                     <div class="component">
+//                         <p class="validity">${element.com}</p>
+//                         <p class="validity">${element.vali}</p>
+//                     </div>
+//                     <div class="date">    
+//                         <p>${element.curren}</p>
+//                         <p>${element.day}</p>
+//                         <p>${element.loca}</p>
+//                     </div>
+//                     <div class="block">
+//                         <button class="btn">Details</button>
+//                         <button class="submit">Book now</button>
+//                     </div>`;
+//                 frames.appendChild(newDiv);
+
+//                 const detailsButton = newDiv.querySelector('.btn');
+//                 const bookNowButton = newDiv.querySelector('.submit');
+
+//                 detailsButton.addEventListener('click', () => {
+//                     window.location.href = 'aut.html';
+//                 });
+
+//                 bookNowButton.addEventListener('click', () => {
+//                     window.location.href = 'aut.html';
+//                 });
+//             });
+//         })
+//         .catch((error) => {
+//             console.error("Unable to fetch data:", error);
+//         });
+// }
+
+// fetchJSONData();
+const frame = document.getElementById("loop");
+const frames = document.getElementById("loops");
+
+function fetchJSONData(url, dataHandler) {
+    fetch(url)
+        .then((res) => {
+            if (!res.ok) {
+                throw new Error(`HTTP error! Status: ${res.status}`);
+            }
+            return res.json();
+        })
+        .then(dataHandler)
+        .catch((error) => console.error("Unable to fetch data:", error));
+}
+
+function createCard(element, parentElement) {
+    let newDiv = document.createElement("div");
+    newDiv.id = element.id;
+    newDiv.className = "card";
+    newDiv.innerHTML = `
+        <img src="${element.imgurl || element.url}">
+        <img class="image" src="${element.img || element.images}">
+        <div class="text-comp">
+            <h2>${element.heading || element.head}</h2>
+            <p class="desc">${element.description || element.descript}</p>
+        </div>
+        <div class="component">
+            <p class="validity">${element.component || element.com}</p>
+            <p class="validity">${element.validity || element.vali}</p>
+        </div>
+        <div class="date">
+            <p>${element.currency || element.curren}</p>
+            <p>${element.date || element.day}</p>
+            <p>${element.location || element.loca}</p>
+        </div>
+        <div class="block">
+            <button class="btn">Details</button>
+            <button class="submit">Book now</button>
+        </div>`;
+    parentElement.appendChild(newDiv);
+
+    const detailsButton = newDiv.querySelector('.btn');
+    const bookNowButton = newDiv.querySelector('.submit');
+
+    detailsButton.addEventListener('click', () => {
+        window.location.href = 'aut.html';
+    });
+
+    bookNowButton.addEventListener('click', () => {
+        window.location.href = 'aut.html';
+    });
+}
+
+fetchJSONData("./data.json", (data) => {
+    data.users.forEach((element) => createCard(element, frame));
+});
+
+fetchJSONData("./main.json", (data) => {
+    data.organizer.forEach((element) => createCard(element, frames));
+});
+
+
 // document.addEventListener('DOMContentLoaded', () => {
 //     const form = document.getElementById('registration-form');
 //     const thankYouMessage = document.querySelector('.thank-you-message');

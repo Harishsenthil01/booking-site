@@ -30,9 +30,9 @@
 .spacer{
     flex: 1;
 }
-.navigation{
+/* .navigation{
     padding-top: 10px;
-}
+} */
 .menu{
     color: white;
     text-decoration: none;
@@ -48,6 +48,7 @@
 .section-left{
     width: 17%;
     position: fixed;
+
 }
 /* .search-bar input{
     margin-bottom: 10px;
@@ -233,25 +234,12 @@
     padding-left: 10px;
    height: 100px;
 }
-.block button{
-    cursor: pointer;
-}
+
 .button{
     display: flex;
     justify-content: space-around;
 }
-.button button{
-    border: 1px none white;
-    background-color: #b4b4b4;
-    padding: 10px;
-    border-radius: 10px;
-    cursor: pointer;
-}
-.button .submit{
-    background-color: #5340ff;
-    color: white;
-    cursor: pointer;
-}
+
 .cards-last{
     padding-left: 20px;
     display: flex;
@@ -262,8 +250,9 @@
     margin-left: 40px;
 }
 .hidden th img{
-    width: 100px;
+    width: 50px;
     border-radius: 10px;
+    height: 50px;
 }
 .hidden{
     padding-left: 20%;
@@ -275,12 +264,12 @@ table{
     padding-block: 25px;
 }
 th button{
-    padding: 5px;
+    padding: 15px;
     margin-block: 5px;
     border: 1px none;
     border-radius: 5px;
     cursor: pointer;
-    width: 100px;
+    width: 200px;
 }
 th{
     width: 100px;
@@ -370,7 +359,7 @@ th{
 #ion{
     flex-direction: column;
     justify-content: space-around;
-    font-size: 40px;
+    font-size: 25px;
     cursor: pointer;
     opacity: 0.5;
     padding-block: 10px;
@@ -445,20 +434,21 @@ form input{
 }
 .dollar{
      color: blue;
-     font-size: 40px;
+     font-size: 25px;
 }
 select{
-    padding-block: 10px;
+    padding-block: 8px;
     margin-bottom: 10px;
     background-color: #f0f0f0;
+    border-radius: 5px;
 }
-button{
+.block button{
     padding-block: 10px;
     color: white;
     background-color: #5340ff;
     border-radius: 5px;
     margin-top: 10px;
-    padding-inline: 30px;
+    width: 46%;
     margin-bottom: 10px;
     cursor: pointer;
 }
@@ -505,7 +495,15 @@ button{
 .thank-you-message{
     display: none;
 }
-
+#register{
+    padding-block: 10px;
+    background-color: #5340ff;
+    color: white;
+    font-weight: 400;
+    border-radius: 5px;
+    font-size: 20px;
+    border: 1px none;
+}
 /* .logotext {
     display: flex;
     align-items: center;
@@ -583,11 +581,55 @@ button{
     border-radius: 8px;
 }
 
-
-.block button {
-    margin-right: 8px;
+.text-comp{
+    min-height: 13vh;
 }
-
+.hidden .card{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Two cards per row */
+    gap: 10px;
+    align-items: center;
+    border-radius: 0px;
+    margin-bottom: 15px;
+}
+.hidden .card .image{
+    display: none;
+}
+.hidden .card h2{
+    margin-top: 65px;
+    line-height: 0px;
+    padding-inline: 0px;
+}
+.hidden .block{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.hidden .block .btn{
+    width: 200px;
+    margin-right: 10px;
+}
+.hidden .block .submit{
+    width: 200px;
+    margin-right: 10px;
+}
+.hidden .component{
+    display: block;
+}
+.hidden .card .desc{
+    display: none;
+}
+.hidden .date p{
+    padding-inline: 10px;
+}
+.hidden .component .validity{
+    margin-inline: 0px;
+}
+.hidden .card img{
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);;
+    width: 70px;
+    margin-left: 20px;
+}
 @media (max-width: 480px) {
     .header {
         flex-direction: column;
@@ -760,10 +802,10 @@ button{
     .component .validity{
         background-color: #f0f0f0;
         margin-inline: 10px;
+        padding: 6px;
+        border-radius: 5px;
     }
-    .btn{
-        background-color: #e2e2e2;
-    }
+    
     .card .desc{
         height: 14vh;
         padding-inline: 10px;
@@ -778,8 +820,20 @@ button{
     }
     .block button{
         border: 1px none;
+        padding-block: 10px;
+      color: white;
+       background-color: #5340ff;
+       border-radius: 5px;
+       margin-top: 10px;
+      margin-bottom: 10px;
+      font-weight: 600;
+        font-size: 18px;
     }
-    
+    .block .btn{
+        background-color: #e2e2e2;
+        color: black;
+        
+    }
 }
 @media screen and (min-width: 481px) and (max-width: 768px) {
  
@@ -862,6 +916,7 @@ button{
         background-color: #f0f0f0;
         margin-inline: 15px;
         border-radius: 5px;
+        padding: 6px;
     }
     .btn{
         background-color: #e2e2e2;
@@ -880,14 +935,33 @@ button{
     .block button{
         border: 1px none;
     }
-    .text-comp{
+    /* .text-comp{
         height: 22vh;
+    } */
+    .block button{
+        border: 1px none;
+        padding-block: 10px;
+      color: white;
+       background-color: #5340ff;
+       border-radius: 5px;
+       margin-top: 10px;
+      margin-bottom: 10px;
+      font-weight: 600;
+        font-size: 18px;
+    }
+    .block .btn{
+        background-color: #e2e2e2;
+        color: black;
+        
+    }
+    .text-comp{
+        min-height: 22vh;
     }
 }
-@media screen and (min-width: 769px) and (max-width: 1200px){
+@media screen and (min-width: 769px) and (max-width: 1024px){
     #loop {
         grid-template-columns: repeat(3, 1fr); /* Two cards per row */
-        gap: 30px; /* Adjust the gap for this range if needed */
+        gap: 15px; /* Adjust the gap for this range if needed */
     }
     .search-bar input{
         width: 135px;
@@ -932,7 +1006,7 @@ button{
         background-color: #f0f0f0;
         margin-inline: 15px;
         border-radius: 5px;
-        cursor: pointer;
+        padding: 6px;
     }
     .btn{
         background-color: #e2e2e2;
@@ -949,16 +1023,112 @@ button{
         justify-content: space-around;
     }
     .block button{
-        padding-inline: 30px;
-        border-radius: 10px;
-        border: 1px white none;
-        font-weight: 500;
+        border: 1px none;
+        padding-block: 10px;
+      color: white;
+       background-color: #5340ff;
+       border-radius: 5px;
+       margin-top: 10px;
+      margin-bottom: 10px;
+      font-weight: 600;
+        font-size: 18px;
     }
-    .text-comp{
-        height: 20svh;
+    .block .btn{
+        background-color: #e2e2e2;
+        color: black;
+        
     }
+     .text-comp{
+        min-height: 19vh;
+     }
+    
 }
-@media screen and (min-width: 1201px) and (max-width: 1400px){
+@media screen and (min-width: 1025px) and (max-width: 1200px){
+    #loop {
+        grid-template-columns: repeat(3, 1fr); /* Two cards per row */
+        gap: 15px; /* Adjust the gap for this range if needed */
+    }
+    .search-bar input{
+        width: 135px;
+        border: 1px none;
+        background-color: white;
+    }
+    #emails{
+        height: 8vh;
+        margin-bottom: 15px;
+    }
+    .another-form input{
+        width: 160px;
+    }
+    .content1{
+        display: none;
+    }
+    .clear-filter button{
+        width: 160px;
+        cursor: pointer;
+    }
+    .clear-filter{
+        margin-left: 15px;
+        padding-left: 0px;
+    }
+    #icon{
+        padding-left: 70px;
+    }
+    .card h2{
+        margin-top: -50px;
+        padding-inline: 10px;
+        line-height: 22px;
+    }
+    .date{
+        display: flex;
+        justify-content: space-around;
+    }
+    .component{
+        display: flex;
+       
+    }
+    .component .validity{
+        background-color: #f0f0f0;
+        margin-inline: 15px;
+        border-radius: 5px;
+        padding: 6px;
+    }
+    .btn{
+        background-color: #e2e2e2;
+    }
+    .card .desc{
+        padding-inline: 10px;
+    }
+    .card{
+        background-color: white;
+    margin-bottom: 30px;
+    }
+    .block{
+        display: flex;
+        justify-content: space-around;
+    }
+    .block button{
+        border: 1px none;
+        padding-block: 10px;
+      color: white;
+       background-color: #5340ff;
+       border-radius: 5px;
+       margin-top: 10px;
+      margin-bottom: 10px;
+      font-weight: 600;
+        font-size: 18px;
+    }
+    .block .btn{
+        background-color: #e2e2e2;
+        color: black;
+        
+    }
+     .text-comp{
+        min-height: 19vh;
+     }
+    
+}
+@media screen and (min-width: 1201px) and (max-width: 1440px){
     #loop {
         grid-template-columns: repeat(3, 1fr); /* Two cards per row */
         gap: 30px; /* Adjust the gap for this range if needed */
@@ -1009,6 +1179,7 @@ button{
         background-color: #f0f0f0;
         margin-inline: 25px;
         border-radius: 5px;
+        padding: 6px;
     }
     .btn{
         background-color: #e2e2e2;
@@ -1026,16 +1197,29 @@ button{
         justify-content: space-around;
     }
     .block button{
-        padding-inline: 45px;
-        border-radius: 10px;
-        border: 1px white none;
-        font-weight: 500;
+        border: 1px none;
+        padding-block: 10px;
+      color: white;
+       background-color: #5340ff;
+       border-radius: 5px;
+       margin-top: 10px;
+      margin-bottom: 10px;
+      font-weight: 600;
+        font-size: 18px;
     }
-    .text-comp{
+    .block .btn{
+        background-color: #e2e2e2;
+        color: black;
+        
+    }
+     .text-comp{
+        min-height: 19vh;
+     }
+    /* .text-comp{
         height: 18vh;
-    }
+    } */
 }
-@media screen and (min-width: 1401px){
+@media screen and (min-width: 1441px){
     #loop {
         grid-template-columns: repeat(3, 1fr); /* Two cards per row */
         gap: 30px; /* Adjust the gap for this range if needed */
@@ -1086,6 +1270,7 @@ button{
         background-color: #f0f0f0;
         margin-inline: 25px;
         border-radius: 5px;
+        padding: 6px;
     }
     .btn{
         background-color: #e2e2e2;
@@ -1108,7 +1293,7 @@ button{
         border: 1px white none;
         font-weight: 500;
     }
-    .text-comp{
-        height: 12vh;
-    }
+    /* .text-comp{
+        min-height: 13vh;
+    } */
 }
