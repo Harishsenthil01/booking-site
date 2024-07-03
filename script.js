@@ -219,7 +219,7 @@ function createCard(element, parentElement) {
         <img src="${element.imgurl || element.url}">
         <img class="image" src="${element.img || element.images}">
         <div class="text-comp">
-            <h2>${element.heading || element.head}</h2>
+            <h2 class="preserve-whitespace">${(element.heading || element.head).replace(/\n/g, '<br>')}</h2>
             <p class="desc">${element.description || element.descript}</p>
         </div>
         <div class="component">

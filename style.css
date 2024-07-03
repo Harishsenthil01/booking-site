@@ -957,7 +957,28 @@ select{
     .text-comp{
         min-height: 22vh;
     }
-}
+    .hidden .card h2{
+        line-height: 30px;
+        margin-top: 0px
+    }
+    .hidden .block .btn{
+        width: 150px;
+    }
+    .hidden .block .submit{
+        width: 150px;
+    }
+    .hidden .component .validity{
+        padding: 0px;
+    }
+    .hidden .text-comp{
+        min-height: 0vh;
+    }
+    .hidden .card img{
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+    width: 70px;
+    margin-left: 8px;
+      }
+ }
 @media screen and (min-width: 769px) and (max-width: 1024px){
     #loop {
         grid-template-columns: repeat(3, 1fr); /* Two cards per row */
@@ -1041,7 +1062,27 @@ select{
      .text-comp{
         min-height: 19vh;
      }
-    
+     .hidden .card h2{
+        line-height: 30px;
+        margin-top: 0px
+    }
+    .hidden .block .btn{
+        width: 150px;
+    }
+    .hidden .block .submit{
+        width: 150px;
+    }
+    .hidden .component .validity{
+        padding: 0px;
+    }
+    .hidden .text-comp{
+        min-height: 0vh;
+    }
+    .hidden .card img{
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+    width: 70px;
+    margin-left: 8px;
+      }
 }
 @media screen and (min-width: 1025px) and (max-width: 1200px){
     #loop {
@@ -1126,6 +1167,30 @@ select{
      .text-comp{
         min-height: 19vh;
      }
+     .hidden .card h2{
+        line-height: 30px;
+        margin-top: 0px
+    }
+    .hidden .block .btn{
+        width: 150px;
+    }
+    .hidden .block .submit{
+        width: 150px;
+    }
+    .hidden .component .validity{
+        padding: 0px;
+    }
+    .hidden .text-comp{
+        min-height: 0vh;
+    }
+    .hidden .card img{
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+    width: 70px;
+    margin-left: 15px;
+      }
+      .hidden .date p{
+        padding-inline: 15px;
+      }
     
 }
 @media screen and (min-width: 1201px) and (max-width: 1440px){
@@ -1218,6 +1283,30 @@ select{
     /* .text-comp{
         height: 18vh;
     } */
+    .hidden .card h2{
+        line-height: 30px;
+        margin-top: 0px
+    }
+    .hidden .block .btn{
+        width: 275px;
+    }
+    .hidden .block .submit{
+        width: 275px;
+    }
+    .hidden .component .validity{
+        padding: 0px;
+    }
+    .hidden .text-comp{
+        min-height: 0vh;
+    }
+    .hidden .card img{
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+    width: 70px;
+    margin-left: 15px;
+      }
+      .hidden .date p{
+        padding-inline: 20px;
+      }
 }
 @media screen and (min-width: 1441px){
     #loop {
@@ -1289,11 +1378,40 @@ select{
     }
     .block button{
         padding-inline: 45px;
-        border-radius: 10px;
+        border-radius: 5px;
         border: 1px white none;
         font-weight: 500;
     }
     /* .text-comp{
         min-height: 13vh;
     } */
+    .hidden .card h2{
+        line-height: 30px;
+        margin-top: 0px
+    }
+    .hidden .block .btn{
+        width: 300px;
+    }
+    .hidden .block .submit{
+        width: 300px;
+    }
+    .hidden .component .validity{
+        padding: 0px;
+    }
+    .hidden .text-comp{
+        min-height: 0vh;
+    }
+    .hidden .card img{
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+    width: 70px;
+    margin-left: 15px;
+      }
+      .hidden .date p{
+        padding-inline: 40px;
+      }
+      .block .btn{
+        background-color: #e2e2e2;
+        color: black;
+        
+    }
 }
